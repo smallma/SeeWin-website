@@ -1,0 +1,121 @@
+body p {
+  font-size: 17px;
+  color: gray; }
+body h1, body h2, body h3, body li {
+  color: gray; }
+
+.modal-open {
+  padding-right: 0 !important; }
+
+.navbar-brand {
+  margin-left: 28px;
+  color: white !important;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid rgba(195, 255, 251, 0.6);
+  background-color: #f39a04;
+  line-height: 9px;
+  height: 43px;
+  margin-top: 4px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  transform: skew(-20deg);
+  transition: background-color 0.5s ease;
+  border-radius: 3px; }
+  .navbar-brand:hover {
+    background-color: #CF0000 !important;
+    transition: background-color 0.5s ease; }
+
+.navbar {
+  min-height: 60px; }
+  .navbar .navbar-nav li {
+    border-left: solid 1px #AACCC0; }
+  .navbar .navbar-nav .dropdown .dropdown-menu {
+    background-color: #007f7f !important; }
+    .navbar .navbar-nav .dropdown .dropdown-menu a {
+      color: #CAFFFF !important; }
+      .navbar .navbar-nav .dropdown .dropdown-menu a:hover {
+        background-color: rgba(0, 0, 0, 0.3) !important; }
+  .navbar .navbar-nav li a {
+    color: #B7FFFF; }
+  .navbar .navbar-nav li .dropdown-menu a {
+    color: #6A7F78; }
+  .navbar .navbar-nav li.open .dropdown-toggle {
+    background-color: transparent !important; }
+
+.navbar-fixed-top {
+  padding: 10px 0; }
+
+.navbar-inverse {
+  border-color: gray;
+  background-color: rgba(0, 127, 127, 0.9); }
+  .navbar-inverse .navbar-collapse {
+    border-color: #A4CCCC; }
+    .navbar-inverse .navbar-collapse .divider {
+      background-color: #A4CCCC !important; }
+  .navbar-inverse .navbar-toggle {
+    border: 1px solid #A4CCCC; }
+    .navbar-inverse .navbar-toggle:hover {
+      background-color: rgba(0, 127, 127, 0.8); }
+
+.navbar-wrapper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.carousel {
+  height: 400px;
+  margin-bottom: 20px; }
+  .carousel .right {
+    background-image: linear-gradient(to right, rgba(164, 204, 204, 0.0001) 0, rgba(164, 204, 204, 0.7) 100%) !important; }
+  .carousel .left {
+    background-image: linear-gradient(to right, rgba(164, 204, 204, 0.7) 0, rgba(164, 204, 204, 0.0001) 100%) !important; }
+  .carousel .item {
+    height: 400px; }
+  .carousel .carousel-control .glyphicon {
+    color: #727F7F;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s;
+    margin-top: 10px !important; }
+  .carousel .carousel-control:hover .glyphicon {
+    visibility: visible;
+    opacity: 1; }
+
+section#commonQA li {
+  font-size: 18px; }
+section h3 {
+  padding-left: 17px; }
+section p {
+  padding: 10px 20px 10px 30px;
+  border-left-color: #1b809e; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 127, 127, 0.9);
+  padding: 15px 0; }
+  footer .footer-below {
+    padding: 15px 0; }
+    footer .footer-below .container p {
+      bottom: 14px;
+      color: white;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      margin-right: 15px; }
+
+.facebookLike {
+  display: block; }
+
+.copyRight {
+  position: absolute;
+  right: 0; }
+
+#elecMI {
+  width: 100%;
+  background-image: url('../icons/Residential-Pipe-Repair.png') !important;
+  background-repeat: no-repeat; }
