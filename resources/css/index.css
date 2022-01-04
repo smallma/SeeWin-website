@@ -1,121 +1,105 @@
-body p {
-  font-size: 17px;
-  color: gray; }
-body h1, body h2, body h3, body li {
-  color: gray; }
+.article {
+  position: absolute;
+  top: -100px;
+  opacity: 0; }
 
-.modal-open {
-  padding-right: 0 !important; }
+.navbar .btnContactUs {
+  transition: all 450ms ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: transparent;
+  outline-width: 0 !important;
+  border: 0;
+  padding: 16px; }
+  .navbar .btnContactUs:hover {
+    font-size: 16px; }
 
 .navbar-brand {
-  margin-left: 28px;
-  color: white !important;
-  font-size: 22px;
-  font-weight: bold;
-  border: 2px solid rgba(195, 255, 251, 0.6);
-  background-color: #f39a04;
-  line-height: 9px;
-  height: 43px;
-  margin-top: 4px;
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
-  -o-transform: skew(-20deg);
-  -ms-transform: skew(-20deg);
-  transform: skew(-20deg);
-  transition: background-color 0.5s ease;
-  border-radius: 3px; }
-  .navbar-brand:hover {
-    background-color: #CF0000 !important;
-    transition: background-color 0.5s ease; }
+  font-size: 21px;
+  position: absolute;
+  left: 7px;
+  margin-left: 0 !important; }
 
-.navbar {
-  min-height: 60px; }
-  .navbar .navbar-nav li {
-    border-left: solid 1px #AACCC0; }
-  .navbar .navbar-nav .dropdown .dropdown-menu {
-    background-color: #007f7f !important; }
-    .navbar .navbar-nav .dropdown .dropdown-menu a {
-      color: #CAFFFF !important; }
-      .navbar .navbar-nav .dropdown .dropdown-menu a:hover {
-        background-color: rgba(0, 0, 0, 0.3) !important; }
-  .navbar .navbar-nav li a {
-    color: #B7FFFF; }
-  .navbar .navbar-nav li .dropdown-menu a {
-    color: #6A7F78; }
-  .navbar .navbar-nav li.open .dropdown-toggle {
-    background-color: transparent !important; }
+.intro {
+  background: no-repeat center center;
+  background-image: url(../images/repairWorker-1.jpg);
+  height: 310px;
+  width: 100%;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative; }
+  .intro .hoverBg {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%; }
+  .intro .content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    margin-top: -66px;
+    font-size: 16px;
+    text-shadow: 1px 2px gray;
+    color: white;
+    line-height: 2em; }
+    .intro .content .highlight {
+      font-weight: bold;
+      font-size: 18px; }
 
-.navbar-fixed-top {
-  padding: 10px 0; }
+.businessCard div {
+  margin-bottom: 16px;
+  text-align: left;
+  margin-left: 16px; }
 
-.navbar-inverse {
-  border-color: gray;
-  background-color: rgba(0, 127, 127, 0.9); }
-  .navbar-inverse .navbar-collapse {
-    border-color: #A4CCCC; }
-    .navbar-inverse .navbar-collapse .divider {
-      background-color: #A4CCCC !important; }
-  .navbar-inverse .navbar-toggle {
-    border: 1px solid #A4CCCC; }
-    .navbar-inverse .navbar-toggle:hover {
-      background-color: rgba(0, 127, 127, 0.8); }
+.businessCard .name {
+  text-align: center;
+  font-size: 20px; }
 
-.navbar-wrapper {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
+section {
+  margin: 48px; }
+  section .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+    font-weight: 800; }
 
-.carousel {
-  height: 400px;
-  margin-bottom: 20px; }
-  .carousel .right {
-    background-image: linear-gradient(to right, rgba(164, 204, 204, 0.0001) 0, rgba(164, 204, 204, 0.7) 100%) !important; }
-  .carousel .left {
-    background-image: linear-gradient(to right, rgba(164, 204, 204, 0.7) 0, rgba(164, 204, 204, 0.0001) 100%) !important; }
-  .carousel .item {
-    height: 400px; }
-  .carousel .carousel-control .glyphicon {
-    color: #727F7F;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.6s;
-    margin-top: 10px !important; }
-  .carousel .carousel-control:hover .glyphicon {
-    visibility: visible;
-    opacity: 1; }
-
-section#commonQA li {
-  font-size: 18px; }
-section h3 {
-  padding-left: 17px; }
-section p {
-  padding: 10px 20px 10px 30px;
-  border-left-color: #1b809e; }
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee; }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 127, 127, 0.9);
-  padding: 15px 0; }
-  footer .footer-below {
-    padding: 15px 0; }
-    footer .footer-below .container p {
-      bottom: 14px;
-      color: white;
-      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      margin-right: 15px; }
+  position: relative; }
+  footer .copyRight {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -141px; }
 
-.facebookLike {
-  display: block; }
+@media screen and (max-width: 5500px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.2) !important; }
+    .navbar .btnContactUs {
+      color: #F5F5EB !important; }
+      .navbar .btnContactUs:hover {
+        color: #fff !important; }
+  .navbar-inverse {
+    background-color: transparent;
+    border-color: transparent; }
+  .navbar-brand {
+    color: white !important; } }
 
-.copyRight {
-  position: absolute;
-  right: 0; }
-
-#elecMI {
-  width: 100%;
-  background-image: url('../icons/Residential-Pipe-Repair.png') !important;
-  background-repeat: no-repeat; }
+@media screen and (max-width: 480px) {
+  .navbar {
+    box-shadow: -15px 1px 32px -2px; }
+    .navbar .btnContactUs {
+      color: gray !important; }
+      .navbar .btnContactUs:hover {
+        color: #000 !important; }
+  .navbar-inverse {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.9) !important; }
+  .navbar-brand {
+    color: black !important; } }
