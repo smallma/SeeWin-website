@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build CSS
+        run: npm run build:css
+
+      - name: Prepare deploy directory
+        run: |
+          mkdir -p _deploy
+          cp -r index.html bootstrap resources _deploy/
+          echo "seewin.taiwanno1.cc" > _deploy/CNAME
+
+      - name: Preserve v1/ from existing gh-pages
+        run: |
+          git fetch origin gh-pages --depth=1
+          git checkout origin/gh-pages -- v1 || echo "v1/ not present, skipping"
+          if [ -d v1 ]; then cp -r v1 _deploy/; fi
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_deploy
+          publish_branch: gh-pages
+          cname: seewin.taiwanno1.cc
